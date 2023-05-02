@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>COMP501 – Computing Technology in Society</title>
+</head>
+<body style=background-color:pink;>
+<center>
+<img src="images/image001.jpg">
+<h1>COMP501 - Computing Technology in Society</h1>
+<h2>Semester 1, 2023</h2>
+<h2>Assignment 1: ICT Fundamentals</h2>
+</center>
+<p><b>Total Marks: 100 	(Contribution to the final mark: 40%)</b></p>
+<p><b>Due: 23:59 pm, Sunday, 2 April 2023</b></p>
+Late penalty: Late submissions will be penalised at 5% of the actual assignment mark for every calendar day.
+<br>E.g. assignments submitted 5 minutes late are penalised as one day late.
+<br>Late work of 5 or more days will not be marked.</p>
+<center>
+<h2>ASSIGNMENT AIM</h2>
+</center>
+<p>The assignment has 4 parts:</p>
+<p>1.	It aims to give students an understanding of how computer systems represent real-life data such as positive, negative numbers, floating point numbers, text, etc., at the lowest level seen by the programmer, namely the binary numbers.</p>
+<p>2.	It prepares students with the ability to install multi-operating systems using VirtualBox (https://www.virtualbox.org/) and comparatively evaluate the Linux/UNIX Operating Systems (OS). This assignment is also prepared for students to understand the basic concepts covering Linux/UNIX file systems, commands, and working environments.</p>
+<p>3.	It helps students understand the basic idea of contemporary Machine Learning and Deep Learning using PyTorch (https://www.pytorch.org/) and Google Colab (https://colab.research.google.com/).</p>
+<p>4.	It provides students some foundations of Hypertext Markup Language (HTML); you will have a chance to learn about HTML elements and structure. Students will build some simple blocks of a website.</p>
+<h2>Instruction for Submission</h2>
+<p>The assignment must be submitted on CANVAS in soft copy.</p>
+<p>File(s) to be submitted:
+<p>1.	A zip file contains all your assignment files and folders.</p>
+<p>2.	The submitted folder might contain PDF files, docx files, or a website</p>
+<p>Compress all files to “LAST NAME_Student ID.zip”, the file includes all documents, images and video files. Submit it on CANVAS.</p>
+<h2>Miscellaneous requirements:</h2>
+<p>•	The assignment will not be marked if:</p>
+<p>		o	It contains any form of malware  (e.g. computer virus)</p>
+<p>		o	Not submitted in correct file format (see section above: Instruction for  Submission)</p>
+<p>•	Keep a backup copy of your assignments to be:</p>
+<p>o	uploaded to <i>“Turnitin”</i> anti-plagiarism service – if requested.</p>
+<p>o	submitted as a hard copy – if requested.</p>
+<p><i>Note: Show all your workings where possible</i></p>
+<center><h2>Part One (35 marks):</h2></center>
+<p><b><u>Question 1:</b> Converting Between Number Bases (6 marks)</u></p>
+<p>Consider A is the two NON ZERO digits in positions 5 and 6 of your AUT ID number, so</p>
+<p>Examples:</p>
+<p>If your ID is 36125612 then A = 56.</p>
+<p>If your ID is 36125061 then A = 56.</p>
+<p>If your ID is 36120561 then A = 56.</p>
+<p><i>Please fill the below boxes with your own ID number.</i></p>
+<p><b>ID = [2][2][1][8][0][0][5][8]</b></p>
+<p>Perform the following conversions between different number based systems (3 marks for each):</p>
+Assume the number <b>A</b> is a decimal number (base 10):
+<p>1.	Convert <b>A<sub>10</sub></b> (from Decimal) to Binary and call the answer <b>M<sub>2</sub></b>
+<br><b>A<sub>10</sub></b> = 85</p>
+<br><img src="images/answer01.png"><br>
+<p><b>M<sub>2</sub></b>  = 01010101</p>
+<p>2.	Convert <b>A<sub>10</sub></b> (from Decimal) to Hexadecimal and call the answer <b>N<sub>16</sub></b>:
+<br><b>A<sub>10</sub></b> = 85
+<br><img src="images/answer02.png"><br>
+<br><b>N<sub>16</sub></b> = 55</p>
+<p><b><u>Question 2:</b> Unsigned Arithmetic Operations (6 marks)</u></p>
+<p>Carry out the operations, assume that the numbers are unsigned and unlimited bits to represent:</p>
+<p>a)	Base 2: <b>M<sub>2</sub></b> + 110011012 
+<br><b>M<sub>2</sub></b> = 01010101
+<br><img src="images/answer03.png">
+<br>Answer: 00100010
+<p>b)	Base 16: <b>N<sub>16</sub></b> + 99<sub>16</sub></p>
+<br><img src="images/answer04.png">
+<br>Answer: EE
+<p><u><b>Question 3:</b> 2’s Complement Conversion (5 marks)</u></p>
+<p>Assume that numbers are represented as signed, 8-bit 2’s complement representation.</p>
+<p>If the last two digits of your AUT ID is 56 then call <b>B<sub>10</sub></b> = -56.
+<br>Work out the following question (replace with your last 2 digits of your ID):</p>
+<p>Convert <b>B<sub>10</sub></b> to 8-bit 2’s complement Binary; give the answer in 8 bits binary number.
+<br><b>B<sub>10</sub></b>= -58
+<br><img src="images/answer05.png">
+<br>Answer: <b>C<sub>2</sub></b> = 11000110
+<p><i>(*) note that the number is negative, so the answer will start with ‘1’.</i></p>
+<p><u><b>Question 4:</b> Bitwise Logical Operations (12 marks)</u></p>
+<p>Assume that you have the number <b>C<sub>2</sub></b> found in Question 3, represented as signed, 8-bit 2’s complement representation. 
+<br>Carry out the following operations (3 marks each):
+<p>a)	<b>C<sub>2</sub></b> | 0111 0001 (note: OR operation)
+<br><img src="images/answer06.png">
+<br>Answer: 11110111
+<p>b)	<b>C<sub>2</sub></b>  &  0100 1101 (note: AND operation)</p>
+<img src="images/answer07.png">
+<br>Answer: 01000100
+<p>c)	<b>C<sub>2</sub></b>  ^ 1101 1100 (note: Exclusive OR operation)</p>
+<img src="images/answer08.png">
+<br>Answer: 00011010
+<p>d)	<b>C<sub>2</sub></b> << 4 (note: Shift left arithmetic operation)</p>
+<img src="images/answer09.png">
+<br>Answer: 01100000
+<p><b><u>Question 5:</b> ASCII Characters (6 marks)</u></p>
+<p>The Appendix gives a table for 7-bit ASCII.
+<br>Using this table, we can work out the hexadecimal value corresponding to the encoding of this ASCII string “ABBA”
+<br>(assume each 7-bit code occupies the space of an 8-bit byte with the MSB=0) as <b>41424241<sub>16</sub></b>
+<p>Use Ascii table; find the hexadecimal and Binary values corresponding to <b>your full name</b> (note that there are spaces in the string); answer the following:</p>
+<p>a)	Your full name in Hexadecimal (base 16) (4 marks)</p>
+4a 65 72 69 20 43 61 6d 61 63 68 6f 00
+<br>Jeri Camacho</p>
+<p>b)	How many bits (not bytes) are used (do not count the end of string byte) (2 marks)</p>
+12 x 8
+<br>= 48
+<center><h2>Part Two (30 marks):</h2></center>
+<p>To answer the assignment questions, you use CLI (command-line interface) and provide:</p>
+<p><blockquote>a.	<b>The text or screen-shots of command(s)</b> that you type to perform a task.
+<br>b.	<b>The text or screen-shots of any console output</b> from those commands (the output from a directory listing, for example).
+<br>c.	Make sure that you include ALL commands you used to do a task. This includes any commands you have to type to move to a specific directory. Make sure <b>your pasted texts or screen-shots</b> are clear enough to show where you are or have moved to.</blockquote>
+<p><u><b>Question 1:</b> Setting up one Linux operating system (5 marks)</u></p>
+<p>Obtain your own <b>copy of mandatory Linux</b> distribution. You can download any ISO or VDI images from the Internet (at - http://linuxlookup.com/linux_iso or http://virtualboxes.org/images).
+<br>Once you get a copy of an image file, you can install it on Virtual Box. A tutorial on how to use VirtualBox can be found at https://www.youtube.com/watch?v=sB_5fqiysi4.</p>
+<p>Choose and install any Linux operating systems, listed in https://www.techradar.com/nz/best/best-linux-distros, and display some screen-shots.
+<p>Downloaded puppy 5.2.5 from Canvas:
+<br><img src="images/p201.png">
+<br><br>My VirtualBox settings:
+<br><img src="images/p202.png">
+<br><br>Puppy 5.2.5 up and running:
+<br><img src="images/p203.png"></p>
+<p><u><b>Question 2:</b> Manipulate directory structures in Unix/Linux (24 marks – 2 marks each)</u></p>
+<p>Use any OS that you set up from Question 1 (Puppy is allowed). Assume you are started at your <b>home</b> directory.</p>
+<br>Let your first name be XXX, so XXX = “Mark”, if your name is Mark. XXX from now on refers to your first name (e.g. Mark).
+<p><b>XXX = JERI</b></p>
+<p>Perform a command that displays the absolute path of your <b>home directory</b> (your current location).
+<p>1.	Create a new directory inside your home directory and name it <b>“XXX”</b>
+<br><br><img src="images/p204.png"></p>
+<br><br>2.	Now navigate to the XXX directory and create directory XXX-COMP501WORK and change your current working directory to XXX-COMP501WORK.
+<br><br><img src="images/p205.png"></p>
+<br><br>3.	Create three new subdirectories called Sec1, Sec2, and Sec3 in XXX-COMP501WORK directory.
+<br><br><img src="images/p206.png"></p>
+<br><br>4.	Create a new file called <b>“MyFave.txt”</b> using the <b>touch</b> command and <b>insert</b> three lines into the file (you may use <b>echo</b> command and <b>>></b> command).
+<br><blockquote>a.	The first line should contain your <b>name and ID number.</b>
+<br>b.	The second line should be the <b>first sentence of your favourite song.</b>
+<br>c.	The third line should be the <b>name of your favourite movie.</b></blockquote>
+And display the contents of the file <b>“MyFave.txt”</b> to the standard output screen (you may use <b>cat</b> command).
+<br><br><img src="images/p207.png"></p>
+<br><br>5.	Display the <b>number of words</b> in the file <b>“MyFave.txt”</b> (you may use <b>wc</b> command).
+<br><br><img src="images/p208.png"></p>
+<br><br>6.	Copy the file “MyFave.txt” to directory “Sec1” and rename it to “MyFaveCopy.txt”.
+<br><br><img src="images/p209.png"></p>
+Make another copy of “MyFaveCopy.txt” just made in directory “Sec1” and name it 
+<br>“MyFaveCopyCopy.txt” (also store in the same directory “Sec1”).
+<br><br><img src="images/p210.png"></p>
+Then, display the contents of the directory “Sec1” using the long format.
+<br><br><img src="images/p211.png"></p>
+7.	Copy all the contents of directory “Sec1” to directory “Sec2” and display the contents of the directory “Sec2”.
+<br><br><img src="images/p212.png"></p>
+<br><br>8.	Assume that you are now at the current working directory <b>XXX-COMP501WORK</b>;
+<br>create 15 new files (in directory <b>XXX-COMP501WORK</b>) named as follows:
+<br><blockquote>a.	FICTION.bak
+<br>b.	myunix.txt
+<br>c.	thistle.bak
+<br>d.	mumbo.file
+<br>e.	mumble.txt
+<br>f.	moremumbo.woot
+<br>g.	FundaOfIT.txt
+<br>h.	dooda.text
+<br>i.	coursetext
+<br>j.	Test-1.xtxt
+<br>k.	Test-2.xtxt
+<br>l.	Test-1.bak
+<br>m.	Test-1.txt
+<br>n.	File-1.bat
+<br>o.	Assignment1.file</blockquote>
+<img src="images/p213.png"></p>
+<p>And display a listing of all the files and directories in long format in the current working directory <b>XXX-COMP501WORK</b>.</p>
+<img src="images/p214.png"></p>
+<p>9.	Display a listing of all the files in the current working directory ending with letter <b>‘t’</b> using one command, e.g. unix.tx<b>t</b> or doodad.tex<b>t</b>.</p>
+<img src="images/p215.png"></p>
+<p>10.	Display a listing of all the files in the current working directory starting with <b>‘T’</b> and ending with <b>‘t’</b> using one command, e.g. <b>T</b>est-1.tx<b>t</b>.</p>
+<img src="images/p216.png"></p>
+<p>11.	<b>Move</b> everything (files/directories) containing letter <b>‘t’</b> to the directory <b>Sec3</b> using one command.</p>
+<img src="images/p217.png"></p>
+<p>12.	Display a listing of the contents of the current directory <b>XXX-COMP501WORK</b>. 
+<br>All files that contain letter <b>‘t’</b> should now be gone.
+<p><img src="images/p218.png"></p>
+<h2><center>Part Three (25 marks):</center></h2>
+<p>This part of the assignment will help you to understand the basic idea of Machine Learning and Deep Learning using PyTorch (https://www.pytorch.org/) and Google Colab (https://colab.research.google.com/).</p>
+<p>Assume that you are employed by Auckland Transport (AT), and they ask you to write a program to detect and count how many cars and trucks are flowing through a particular motorway section during different hours of the day. 
+<br>You will use the images optioned live at https://www.journeys.nzta.govt.nz/traffic-and-travel-information/traffic-cameras/auckland/
+<br>The decision is used to adjust the ramp signals (also known as ramp metering) to manage the rate at which vehicles move down the ramp and onto the motorway.</p>
+<h3><center>Instruction to Start with Google Colab</h3></center>
+<p>1)	Download the attached file: Assignment_1.ipynb from the Assessment page.
+<br>2)	Upload it to Google Colab: https://colab.research.google.com/
+<p><img src="images/image002.jpg"></p>
+<p>3)	Click File >> Upload Note Book to upload the <b>.ipynb</b> file
+<br>4)	There are only two cells (click Run cell to run each cell) (<i>you just need to run the first cell once, and the last cell many times, to finish the assignment</i>):
+<br><blockquote>•	1st cell: where you can get the Yolo repo, pre-trained weights and set up the python environment (You only need to run this cell once)
+<br>•	2nd cell: where you can upload the necessary files from your local drive, including images (.jpg) to achieve the prediction with  YOLO</blockquote>
+<p><img src="images/image003.jpg"></p>
+<p>The output image could be something like this:</p>
+<p>test.jpg: Predicted in 19.392162 seconds.
+<br>truck: 80%
+<br>truck: 78%
+<br>truck: 55%
+<br>car: 97%
+<br>car: 90%
+<br>car: 68%
+<br>car: 64%
+<br>Prediction is done in 26.339985132217407 seconds
+<br><img src="images/Picture28.jpg"></p>
+<p>So there are 7 cars/trucks are successfully detected in the image.</p>
+<p>test.jpg: Predicted in 18.271086 seconds.
+<br>truck: 92%
+<br>truck: 75%
+<br>truck: 68%
+<br>car: 97%
+<br>car: 96%
+<br>car: 87%
+<br>car: 78%
+<br>car: 65%
+<br>car: 59%
+<br>car: 59%
+<br>car: 50%
+<br>Prediction is done in 25.13233256340027 seconds
+<br><img src="images/Picture29.jpg"></p>
+<p>And here, there are 11 cars/trucks are successfully detected in the image.</p>
+<p><u><b>Question 1</b>: Collect dataset / photos (10 marks)</u></p>
+<p><blockquote>•	Go to: https://www.journeys.nzta.govt.nz/traffic-and-travel-information/traffic-cameras/auckland/
+<br>•	Choose the motorway section closest to your home, for example: https://www.journeys.nzta.govt.nz/traffic-and-travel-information/traffic-cameras/auckland/723
+<br><br><img src="images/Picture30.png"></p>
+https://www.journeys.nzta.govt.nz/traffic-cameras/auckland/78
+<br>
+<br>•	Normally, photos are refreshed at least every minute or so, right click and save at least 30 dif-ferent photos within one hour, e.g. 10am-11am. 
+<br>•	Save all the pictures to folder <b>Images</b>, and name them XXX_01.jpg, XXX_02.jpg, …. XXX_30.jpg. Let your first name be XXX, so <b>XXX = “Mark”</b>, if your name is Mark.</blockquote>
+<p><u><b>Question 2</b>: Test the prediction performance of YOLO object detection system using images as the inputs (10 marks)</u></p>
+<p>•	Start by running the first cell to set up the environment (you only need to run it once).
+<br><img src="images/Picture32.png"></p>
+<p>•	Run the second cell and click “Choose Files” to upload a jpg image. 
+<br><br><img src="images/Picture33.png"></p>
+<p>•	After that, you should first see the weights being downloaded; and then the object detection system will search for all objects in the image and return output with bounding boxes and annotations of detected objects like this below:
+<br><br><img src="images/Picture34.png"></p>
+<p>•	You will need to collect three things: (1) how many cars/trucks you can see on the original image (left), please just ignore very tiny ones, (2) how many cars/trucks that the computer can count on the right, (3) the accuracy in percentage between the two (e.g. 0% - if none of the cars/trucks is identified, 50% - if there are 20 cars/trucks, but only 10 bounding boxes of the cars/trucks are identified, 100% - if all cars/trucks are identified.</p>
+<p>•	Repeat running the second cell to upload all your photos and save all the prediction results.</p>
+<p>•	Copy and paste the predicted photos on the table below, replace the images with your images, also collect the processing time, and the accuracy, e.g. 2/2 = 100%. (1 mark for each correct photo).</p>
+<p><b>Image 1 Original</b>
+<br><img src="images/og01.jpg"></p>
+<br><b>Image 1 AI detected</b>
+<br><img src="images/ai01.jpg"></p>
+<p><b>Image 2 Original</b>
+<br><img src="images/og02.jpg"></p>
+<br><b>Image 2 AI detected</b>
+<br><img src="images/ai02.jpg"></p>
+<p><b>Image 3 Original</b>
+<br><img src="images/og03.jpg"></p>
+<br><b>Image 3 AI detected</b>
+<br><img src="images/ai03.jpg"></p>
+<p><b>Image 4 Original</b>
+<br><img src="images/og04.jpg"></p>
+<br><b>Image 4 AI detected</b>
+<br><img src="images/ai04.jpg"></p>
+<p><b>Image 5 Original</b>
+<br><img src="images/og05.jpg"></p>
+<br><b>Image 5 AI detected</b>
+<br><img src="images/ai05.jpg"></p>
+<p><b>Image 6 Original</b>
+<br><img src="images/og06.jpg"></p>
+<br><b>Image 6 AI detected</b>
+<br><img src="images/ai06.jpg"></p>
+<p><b>Image 7 Original</b>
+<br><img src="images/og07.jpg"></p>
+<br><b>Image 7 AI detected</b>
+<br><img src="images/ai07.jpg"></p>
+<p><b>Image 8 Original</b>
+<br><img src="images/og08.jpg"></p>
+<br><b>Image 8 AI detected</b>
+<br><img src="images/ai08.jpg"></p>
+<p><b>Image 9 Original</b>
+<br><img src="images/og09.jpg"></p>
+<br><b>Image 9 AI detected</b>
+<br><img src="images/ai09.jpg"></p>
+<p><b>Image 10 Original</b>
+<br><img src="images/og10.jpg"></p>
+<br><b>Image 10 AI detected</b>
+<br><img src="images/ai10.jpg"></p>
+<p><b>Image 11 Original</b>
+<br><img src="images/og11.jpg"></p>
+<br><b>Image 11 AI detected</b>
+<br><img src="images/ai11.jpg"></p>
+<p><b>Image 12 Original</b>
+<br><img src="images/og12.jpg"></p>
+<br><b>Image 12 AI detected</b>
+<br><img src="images/ai12.jpg"></p>
+<p><b>Image 13 Original</b>
+<br><img src="images/og13.jpg"></p>
+<br><b>Image 13 AI detected</b>
+<br><img src="images/ai13.jpg"></p>
+<p><b>Image 14 Original</b>
+<br><img src="images/og14.jpg"></p>
+<br><b>Image 14 AI detected</b>
+<br><img src="images/ai14.jpg"></p>
+<p><b>Image 15 Original</b>
+<br><img src="images/og15.jpg"></p>
+<br><b>Image 15 AI detected</b>
+<br><img src="images/ai15.jpg"></p>
+<p><b>Image 16 Original</b>
+<br><img src="images/og16.jpg"></p>
+<br><b>Image 16 AI detected</b>
+<br><img src="images/ai16.jpg"></p>
+<p><b>Image 17 Original</b>
+<br><img src="images/og17.jpg"></p>
+<br><b>Image 17 AI detected</b>
+<br><img src="images/ai17.jpg"></p>
+<p><b>Image 18 Original</b>
+<br><img src="images/og18.jpg"></p>
+<br><b>Image 18 AI detected</b>
+<br><img src="images/ai18.jpg"></p>
+<p><b>Image 19 Original</b>
+<br><img src="images/og19.jpg"></p>
+<br><b>Image 19 AI detected</b>
+<br><img src="images/ai19.jpg"></p>
+<p><b>Image 20 Original</b>
+<br><img src="images/og20.jpg"></p>
+<br><b>Image 20 AI detected</b>
+<br><img src="images/ai20.jpg"></p>
+<p><b>Image 21 Original</b>
+<br><img src="images/og21.jpg"></p>
+<br><b>Image 21 AI detected</b>
+<br><img src="images/ai21.jpg"></p>
+<p><b>Image 22 Original</b>
+<br><img src="images/og22.jpg"></p>
+<br><b>Image 22 AI detected</b>
+<br><img src="images/ai22.jpg"></p>
+<p><b>Image 23 Original</b>
+<br><img src="images/og23.jpg"></p>
+<br><b>Image 23 AI detected</b>
+<br><img src="images/ai23.jpg"></p>
+<p><b>Image 24 Original</b>
+<br><img src="images/og24.jpg"></p>
+<br><b>Image 24 AI detected</b>
+<br><img src="images/ai24.jpg"></p>
+<p><b>Image 25 Original</b>
+<br><img src="images/og25.jpg"></p>
+<br><b>Image 25 AI detected</b>
+<br><img src="images/ai25.jpg"></p>
+<p><b>Image 26 Original</b>
+<br><img src="images/og26.jpg"></p>
+<br><b>Image 26 AI detected</b>
+<br><img src="images/ai26.jpg"></p>
+<p><b>Image 27 Original</b>
+<br><img src="images/og27.jpg"></p>
+<br><b>Image 27 AI detected</b>
+<br><img src="images/ai27.jpg"></p>
+<p><b>Image 28 Original</b>
+<br><img src="images/og28.jpg"></p>
+<br><b>Image 28 AI detected</b>
+<br><img src="images/ai28.jpg"></p>
+<p><b>Image 29 Original</b>
+<br><img src="images/og29.jpg"></p>
+<br><b>Image 29 AI detected</b>
+<br><img src="images/ai29.jpg"></p>
+<p><b>Image 30 Original</b>
+<br><img src="images/og30.jpg"></p>
+<br><b>Image 30 AI detected</b>
+<br><img src="images/ai30.jpg"></p>
+<p><u><b>Question 3</b>: Evaluation (5 marks)</u><p/>
+<p>Analyse the prediction results and write your evaluation report. Please summarise the prediction accuracies by filling up the below table (10 marks).</p>
+<br>
+<table>
+	<tr bgcolor="lightgrey">
+		<th>Transportation types</th>
+		<th>Total number appeared in all images</th>
+		<th>Total number accurately detected in all images</th>
+		<th>Average accuracy (%)</th>
+	</tr>
+	<tr>
+		<td>Cars</td>
+		<td>191</td>
+		<td>125</td>
+		<td>65.44</td>
+	</tr>
+	<tr>
+		<td>Trucks</td>
+		<td>50</td>
+		<td>21</td>
+		<td>42.00</td>
+	</tr>
+	<tr>
+		<td>Buses</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>Bikes</td>
+		<td>0</td>
+		<td>0</td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>Total</td>
+		<td>241</td>
+		<td>146</td>
+		<td>60.58</td>
+	</tr>
+</table>
+<h2><center>Part Four: (10 marks)</center></h2>
+<p><u><b>Question 1</b>: Successfully present the entire assignment to be displayed correctly on a website using HTML language. (5 marks)</u></p>
+<p><u><b>Question 2</b>: Use your own imagination and artistic skills, turn the page into something nice, clear, and attractive. (5 marks)</u></p>
+</body>
+</html>
